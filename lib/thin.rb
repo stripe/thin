@@ -21,6 +21,7 @@ module Thin
   
   module Backends
     autoload :Base,             "thin/backends/base"
+    autoload :ReusedTcpServer,  "thin/backends/reused_tcp_server"
     autoload :SwiftiplyClient,  "thin/backends/swiftiply_client"
     autoload :TcpServer,        "thin/backends/tcp_server"
     autoload :UnixServer,       "thin/backends/unix_server"

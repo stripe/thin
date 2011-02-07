@@ -231,6 +231,8 @@ module Thin
           Backends::SwiftiplyClient.new(host, port, options)
         when host.include?('/')
           Backends::UnixServer.new(host)
+        when options.has_key?(:reuse)
+          Backends::ReusedTcpServer.new(port) # file descriptor number
         else
           Backends::TcpServer.new(host, port)
         end

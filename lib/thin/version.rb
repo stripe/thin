@@ -7,8 +7,10 @@ module Thin
     MAJOR    = 1
     MINOR    = 3
     TINY     = 2
+    FORK     = 'stripe'
+    FORK_TINY = 0
     
-    STRING   = [MAJOR, MINOR, TINY].join('.')
+    STRING   = [MAJOR, MINOR, TINY, FORK, FORK_TINY].join('.')
     
     CODENAME = "Low-bar Squat".freeze
     

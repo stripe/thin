@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-gem "eventmachine"
+gem "eventmachine", :git => 'https://github.com/stripe/eventmachine.git'
 
 group :development do
   gem "rake-compiler"
